@@ -1,0 +1,14 @@
+Practical 1 CMDS:
+Open Terminal 1:
+sudo apt-get install openjdk-8-jdk       ---- java version 8 installation cmd
+sudo update-alternatives --config java         ------ to change java version in system
+sudo update-alternatives --config javac        ------- to change javac compiler version in system
+
+rm *.class           
+javac *.java         
+rmic AddServerImpl    
+rmiregistry &        
+Now open Terminal 2:
+java AddServer         
+Now open Terminal 3:
+java AddClient localhost 6 8     
