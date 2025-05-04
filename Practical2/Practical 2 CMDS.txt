@@ -1,0 +1,13 @@
+Practical 2 CMDS:
+Open Terminal 1:
+sudo apt-get install openjdk-8-jdk       ---- java version 8 installation cmd
+sudo update-alternatives --config java         ------ to change java version in system
+sudo update-alternatives --config javac        ------- to change javac version in system
+
+idlj -fall ReverseModule.idl
+javac *.java ReverseModule/*.java
+orbd -ORBInitialPort 1050&
+Now open Terminal 2:
+java ReverseServer -ORBInitialPort 1050 -ORBInitialHost localhost&
+Now open Terminal 3:
+java ReverseClient -ORBInitialPort 1050 -ORBInitialHost localhost
