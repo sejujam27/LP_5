@@ -1,0 +1,11 @@
+Practical 3 CMDS:
+Open Terminal:
+sudo apt-get install openjdk-8-jdk       ---- java version 8 installation cmd
+sudo update-alternatives --config java         ------ to change java version in system
+sudo update-alternatives --config javac        ------- to change javac version in system
+
+export MPJ_HOME= (Your mpj File location)
+EX: export MPJ_HOME=/home/saurabh/Downloads/LP5/Practical3/mpj-v0_44
+export PATH=$MPJ_HOME/bin:$PATH
+javac -cp $MPJ_HOME/lib/mpj.jar ScatterGather.java
+$MPJ_HOME/bin/mpjrun.sh -np 4 ScatterGather
